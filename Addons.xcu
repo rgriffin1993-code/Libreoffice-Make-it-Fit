@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oor:component-data xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    oor:name="Addons" oor:package="org.openoffice.Office">
+  <node oor:name="AddonUI">
+    <node oor:name="OfficeMenuBarMerging">
+      <node oor:name="org.makeitfit.m1" oor:op="replace">
+        <node oor:name="S1" oor:op="replace">
+          <prop oor:name="MergePoint"><value>.uno:FormatMenu\.uno:PageDialog</value></prop>
+          <prop oor:name="MergeCommand"><value>AddAfter</value></prop>
+          <prop oor:name="MergeFallback"><value>AddPath</value></prop>
+          <prop oor:name="MergeContext"><value>com.sun.star.text.TextDocument</value></prop>
+          <node oor:name="MenuItems">
+            <node oor:name="M1" oor:op="replace">
+              <prop oor:name="URL"><value>org.makeitfit.cmd:Fit</value></prop>
+              <prop oor:name="Title"><value xml:lang="en-US">Make It Fit...</value></prop>
+              <prop oor:name="Target"><value>_self</value></prop>
+              <prop oor:name="Context"><value>com.sun.star.text.TextDocument</value></prop>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node oor:name="org.makeitfit.m2" oor:op="replace">
+        <node oor:name="S1" oor:op="replace">
+          <prop oor:name="MergePoint"><value>.uno:InsertMenu\.uno:PageNumberWizard</value></prop>
+          <prop oor:name="MergeCommand"><value>AddAfter</value></prop>
+          <prop oor:name="MergeFallback"><value>AddPath</value></prop>
+          <prop oor:name="MergeContext"><value>com.sun.star.text.TextDocument</value></prop>
+          <node oor:name="MenuItems">
+            <node oor:name="M1" oor:op="replace">
+              <prop oor:name="URL"><value>org.makeitfit.cmd:NoFirstNumber</value></prop>
+              <prop oor:name="Title"><value xml:lang="en-US">Suppress Numbering on First Page</value></prop>
+              <prop oor:name="Target"><value>_self</value></prop>
+              <prop oor:name="Context"><value>com.sun.star.text.TextDocument</value></prop>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node oor:name="org.makeitfit.m3" oor:op="replace">
+        <node oor:name="S1" oor:op="replace">
+          <prop oor:name="MergePoint"><value>.uno:FormatMenu\org.makeitfit.cmd:Fit</value></prop>
+          <prop oor:name="MergeCommand"><value>AddAfter</value></prop>
+          <prop oor:name="MergeFallback"><value>AddPath</value></prop>
+          <prop oor:name="MergeContext"><value>com.sun.star.text.TextDocument</value></prop>
+          <node oor:name="MenuItems">
+            <node oor:name="M1" oor:op="replace">
+              <prop oor:name="URL"><value>org.makeitfit.cmd:Restore</value></prop>
+              <prop oor:name="Title"><value xml:lang="en-US">Undo Make It Fit</value></prop>
+              <prop oor:name="Target"><value>_self</value></prop>
+              <prop oor:name="Context"><value>com.sun.star.text.TextDocument</value></prop>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+</oor:component-data>
